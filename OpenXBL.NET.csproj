@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>OpenXBL</RootNamespace>
+    <DebugType>embedded</DebugType>
+    <SignAssembly>False</SignAssembly>
+    <Version>0.1.0</Version>
+    <Authors>SamuelOhrenberg</Authors>
+    <Description>A .netstandard2.1 implementation of the OpenXBL API</Description>
+    <PackageProjectUrl>https://github.com/SamOhrenberg/OpenXBL.NET/wiki</PackageProjectUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/SamOhrenberg/OpenXBL.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>C:\Users\Samuel\Desktop\Projects\WinXbox Improvement\OpenXBL.NET\LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
