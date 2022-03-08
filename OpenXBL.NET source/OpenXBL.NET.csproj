@@ -26,6 +26,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Resources\Text\errors.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Errors.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Text\XboxLiveApi.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>XboxLiveApi.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Text\Errors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>errors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Text\XboxLiveApi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XboxLiveApi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="readme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
